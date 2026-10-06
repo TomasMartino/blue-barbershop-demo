@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- ============================================================
+       THE BLUE BARBERSHOP — Sitio estático
+       Barbería en Azul 1320, Las Tortugas, Godoy Cruz, Mendoza
+       ============================================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO básico -->
+  <title>The Blue Barbershop | Barbería en Godoy Cruz, Mendoza</title>
+  <meta name="description" content="The Blue Barbershop: barbería de autor en Azul 1320, Las Tortugas, Godoy Cruz, Mendoza. Corte, fade, barba y afeitado con navaja. Reservá tu turno por WhatsApp.">
+  <meta name="theme-color" content="#0A1633">
+  <link rel="canonical" href="https://theblue-barbershop.example/">
+
+  <!-- OpenGraph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="The Blue Barbershop">
+  <meta property="og:title" content="The Blue Barbershop | Barbería en Godoy Cruz, Mendoza">
+  <meta property="og:description" content="Barbería de autor en Godoy Cruz. Fade, barba y diseño de cabello con técnica y detalle. ★ 4.7 · 28 reseñas Google.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1600&auto=format&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Blue Barbershop | Barbería en Godoy Cruz, Mendoza">
+  <meta name="twitter:description" content="Barbería de autor en Godoy Cruz. Fade, barba y diseño de cabello con técnica y detalle.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1600&auto=format&fit=crop">
+
+  <!-- Fuentes: Bebas Neue (títulos) + Inter (cuerpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos del sitio -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- ============================================================
+       JSON-LD: schema.org HairSalon / BarberShop
+       Datos reales: teléfono, dirección, geo, rating y horarios.
+       Lunes y Domingo están omitidos a propósito = CERRADO
+       (schema.org no tiene forma de marcar "cerrado": se omite el día).
+       ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["HairSalon", "BarberShop"],
+    "name": "The Blue Barbershop",
+    "description": "Barbería de autor en Godoy Cruz, Mendoza. Corte, fade, barba y afeitado con navaja.",
+    "image": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1600&auto=format&fit=crop",
+    "telephone": "+54-9-261-507-2338",
+    "priceRange": "$$",
+    "url": "https://theblue-barbershop.example/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Azul 1320, Las Tortugas",
+      "addressLocality": "Godoy Cruz",
+      "addressRegion": "Mendoza",
+      "addressCountry": "AR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -32.945873,
+      "longitude": -68.820382
+    },
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=The+Blue+Barbershop+Azul+1320+Godoy+Cruz+Mendoza",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "28",
+      "bestRating": "5"
+    },
+    "sameAs": [
+      "https://instagram.com/theblue_bs"
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "10:00",
+        "closes": "13:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "17:00",
+        "closes": "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "10:00",
+        "closes": "13:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "17:00",
+        "closes": "21:00"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Enlace de salto para navegación por teclado (accesibilidad) -->
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <!-- ============================================================
+       1. HEADER STICKY
+       ============================================================ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+
+      <!-- Logo / marca -->
+      <a href="#inicio" class="logo" aria-label="The Blue Barbershop — volver al inicio">
+        <span class="logo__mark" aria-hidden="true">B</span>
+        <span class="logo__text">THE BLUE <span class="logo__accent">BARBERSHOP</span></span>
+      </a>
+
+      <!-- Navegación principal -->
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#servicios">Servicios</a></li>
+          <li><a class="nav__link" href="#galeria">Galería</a></li>
+          <li><a class="nav__link" href="#horarios">Horarios</a></li>
+          <li><a class="nav__link" href="#contacto">Contacto</a></li>
+        </ul>
+        <a class="btn btn--primary nav__cta" href="https://wa.me/5492615072338" target="_blank" rel="noopener noreferrer">
+          Reservar turno
+        </a>
+      </nav>
+
+      <!-- Botón menú mobile (visible solo en pantallas chicas) -->
+      <button class="nav-toggle" id="nav-toggle" type="button"
+              aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ============================================================
+         2. HERO FULL SCREEN
+         ============================================================ -->
+    <section class="hero" id="inicio">
+      <!-- Fondo con foto de barbería + overlay degradado azul noche -->
+      <div class="hero__bg" role="presentation"></div>
+      <div class="hero__overlay" role="presentation"></div>
+
+      <div class="container hero__content">
+        <!-- Badge de ubicación -->
+        <p class="hero__badge reveal">Godoy Cruz · Mendoza</p>
+
+        <!-- Pill con rating de Google -->
+        <p class="hero__rating reveal">
+          <span class="hero__stars" aria-hidden="true">★</span>
+          4.7 · 28 reseñas Google
+          <span class="sr-only">Puntuación de 4.7 sobre 5 basada en 28 reseñas de Google</span>
+        </p>
+
+        <!-- Titular principal -->
+        <h1 class="hero__title reveal">
+          TU CORTE.<br>
+          TU <span class="text-cyan">ESTILO.</span>
+        </h1>
+
+        <!-- Subtítulo -->
+        <p class="hero__subtitle reveal">
+          Barbería de autor en Godoy Cruz. Fade, barba y diseño de cabello con técnica y detalle.
+        </p>
+
+        <!-- CTAs -->
+        <div class="hero__actions reveal">
+          <a class="btn btn--primary btn--lg" href="https://wa.me/5492615072338" target="_blank" rel="noopener noreferrer">
+            Reservar por WhatsApp
+          </a>
+          <a class="btn btn--ghost btn--lg" href="#servicios">Ver servicios</a>
+        </div>
+      </div>
+
+      <!-- Franja inferior: horarios + dirección -->
+      <div class="hero__strip">
+        <div class="container hero__strip-inner">
+          <p class="hero__strip-item">
+            <span class="hero__strip-label">Horarios</span>
+            Mar a Sáb · 10:00–13:00 y 17:00–21:00
+          </p>
+          <p class="hero__strip-item">
+            <span class="hero__strip-label">Dirección</span>
+            Azul 1320, Las Tortugas, Godoy Cruz
+          </p>
+          <p class="hero__strip-item hero__strip-item--closed">
+            <span class="hero__strip-label">Cerrado</span>
+            Lunes y Domingo
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. SERVICIOS — 6 tarjetas
+         ============================================================ -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Lo que hacemos</p>
+          <h2 class="section__title">SERVICIOS</h2>
+          <p class="section__lead">
+            Cortes pensados para cada tipo de cabello y rostro. Técnica, tijera y máquina con
+            acabado de detalle.
+          </p>
+        </header>
+
+        <div class="cards">
+
+          <!-- Servicio 1 -->
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="6" cy="6" r="3"></circle>
+                <circle cx="6" cy="18" r="3"></circle>
+                <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
+                <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
+                <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <h3 class="card__title">Corte clásico</h3>
+            <p class="card__text">Corte tradicional con tijera y máquina, terminado con peinado y producto.</p>
+            <p class="card__price">desde $8.000</p>
+          </article>
+
+          <!-- Servicio 2 (destacado) -->
+          <article class="card card--featured reveal">
+            <span class="card__badge">Más pedido</span>
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v18"></path>
+                <path d="M5 8h14"></path>
+                <path d="M7 13h10"></path>
+                <path d="M9 18h6"></path>
+              </svg>
+            </div>
+            <h3 class="card__title">Fade / Degradé</h3>
+            <p class="card__text">Degradé de precisión: low, mid o high fade con transición prolija y definida.</p>
+            <p class="card__price">desde $9.500</p>
+          </article>
+
+          <!-- Servicio 3 -->
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 7h16"></path>
+                <path d="M6 7c0 5 2 9 6 9s6-4 6-9"></path>
+                <path d="M9 20h6"></path>
+              </svg>
+            </div>
+            <h3 class="card__title">Perfilado de barba</h3>
+            <p class="card__text">Diseño y perfilado de barba con línea marcada, hidratación y acabado prolijo.</p>
+            <p class="card__price">desde $6.000</p>
+          </article>
+
+          <!-- Servicio 4 -->
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a5 5 0 0 1 5 5c0 3-2 4-2 7H9c0-3-2-4-2-7a5 5 0 0 1 5-5z"></path>
+                <path d="M9 18h6"></path>
+                <path d="M10 21h4"></path>
+              </svg>
+            </div>
+            <h3 class="card__title">Corte + Barba</h3>
+            <p class="card__text">Combo completo: corte a medida y barba perfilada en la misma sesión.</p>
+            <p class="card__price">desde $13.000</p>
+          </article>
+
+          <!-- Servicio 5 -->
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 21l6-6"></path>
+                <path d="M14 4l6 6-7 7-6-6 7-7z"></path>
+                <path d="M13 5l2-2 6 6-2 2"></path>
+              </svg>
+            </div>
+            <h3 class="card__title">Diseño freestyle</h3>
+            <p class="card__text">Líneas, contrastes y patrones creativos con máquina y navaja sobre tu corte.</p>
+            <p class="card__price">desde $10.000</p>
+          </article>
+
+          <!-- Servicio 6 -->
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 17l11-11 4 4-11 11H3v-4z"></path>
+                <path d="M14 6l4 4"></path>
+                <path d="M17 3l4 4"></path>
+              </svg>
+            </div>
+            <h3 class="card__title">Afeitado con navaja</h3>
+            <p class="card__text">Afeitado tradicional con navaja, toalla caliente y after-shave calmante.</p>
+            <p class="card__price">desde $7.000</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. POR QUÉ THE BLUE — 4 diferenciales
+         ============================================================ -->
+    <section class="section section--alt" id="porque">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Diferencia The Blue</p>
+          <h2 class="section__title">POR QUÉ THE BLUE</h2>
+        </header>
+
+        <div class="perks">
+          <!-- Diferencial 1 -->
+          <article class="perk reveal">
+            <span class="perk__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2l2.4 6.9H22l-6 4.4 2.3 7-6.3-4.6L5.7 20l2.3-7-6-4.4h7.6z"></path>
+              </svg>
+            </span>
+            <h3 class="perk__title">Técnica, no improvisación</h3>
+            <p class="perk__text">Cada corte sigue un proceso: consulta, corte por secciones y acabado medido.</p>
+          </article>
+
+          <!-- Diferencial 2 -->
+          <article class="perk reveal">
+            <span class="perk__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M7 12a5 5 0 0 1 10 0"></path>
+                <path d="M4 17h16"></path>
+                <path d="M8 20h8"></path>
+              </svg>
+            </span>
+            <h3 class="perk__title">Navaja y toalla caliente</h3>
+            <p class="perk__text">Afeitado y perfilado con ritual clásico: toalla caliente, navaja y cuidado final.</p>
+          </article>
+
+          <!-- Diferencial 3 -->
+          <article class="perk reveal">
+            <span class="perk__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M12 7v5l3 2"></path>
+              </svg>
+            </span>
+            <h3 class="perk__title">Turnos que se cumplen</h3>
+            <p class="perk__text">Reservás por WhatsApp y te confirmamos el horario. Sin esperas eternas.</p>
+          </article>
+
+          <!-- Diferencial 4 -->
+          <article class="perk reveal">
+            <span class="perk__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19V5"></path>
+                <path d="M4 7h12l-2 3 2 3H4"></path>
+                <circle cx="19" cy="17" r="2"></circle>
+              </svg>
+            </span>
+            <h3 class="perk__title">Barberos que se actualizan</h3>
+            <p class="perk__text">Fades, texturizados y diseños de moda: capacitación constante en tendencias.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. GALERÍA "Nuestros trabajos" — masonry + lightbox
+         ============================================================ -->
+    <section class="section" id="galeria">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Portfolio</p>
+          <h2 class="section__title">NUESTROS TRABAJOS</h2>
+          <p class="section__lead">Fades, barbas y terminaciones reales. Tocá una imagen para verla en grande.</p>
+        </header>
+
+        <div class="masonry">
+
+          <figure class="masonry__item reveal">
+            <button class="masonry__btn" type="button"
+                    data-lightbox-src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=1600&auto=format&fit=crop"
+                    data-lightbox-alt="Barbero perfilando un fade con máquina"
+                    aria-label="Ampliar imagen: barbero perfilando un fade con máquina">
+              <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=800&auto=format&fit=crop"
+                   alt="Barbero perfilando un fade con máquina" loading="lazy" width="800" height="1000">
+            </button>
+          </figure>
+
+          <figure class="masonry__item reveal">
+            <button class="masonry__btn" type="button"
+                    data-lightbox-src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1600&auto=format&fit=crop"
+                    data-lightbox-alt="Perfilado de barba con tijera en primer plano"
+                    aria-label="Ampliar imagen: perfilado de barba con tijera">
+              <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=800&auto=format&fit=crop"
+                   alt="Perfilado de barba con tijera en primer plano" loading="lazy" width="800" height="600">
+            </button>
+          </figure>
+
+          <figure class="masonry__item reveal">
+            <button class="masonry__btn" type="button"
+                    data-lightbox-src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=1600&auto=format&fit=crop"
+                    data-lightbox-alt="Afeitado con navaja y toalla caliente"
+                    aria-label="Ampliar imagen: afeitado con navaja">
+              <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=800&auto=format&fit=crop"
+                   alt="Afeitado con navaja y toalla caliente" loading="lazy" width="800" height="900">
+            </button>
+          </figure>
+
+          <figure class="masonry__item reveal">
+            <button class="masonry__btn" type="button"
+                    data-lightbox-src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1600&auto=format&fit=crop"
+                    data-lightbox-alt="Interior de barbería con silla y espejo en ambiente oscuro"
+                    aria-label="Ampliar imagen: interior de la barbería">
+              <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=800&auto=format&fit=crop"
+                   alt="Interior de barbería con silla y espejo en ambiente oscuro" loading="lazy" width="800" height="1200">
+            </button>
+          </figure>
+
+          <figure class="masonry__item reveal">
+            <button class="masonry__btn" type="button"
+                    data-lightbox-src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?q=80&w=1600&auto=format&fit=crop"
+                    data-lightbox-alt="Cliente con corte de cabello recién terminado"
+                    aria-label="Ampliar imagen: corte terminado">
+              <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?q=80&w=800&auto=format&fit=crop"
+                   alt="Cliente con corte de cabello recién terminado" loading="lazy" width="800" height="1000">
+            </button>
+          </figure>
+
+          <figure class="masonry__item reveal">
+            <button class="masonry__btn" type="button"
+                    data-lightbox-src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?q=80&w=1600&auto=format&fit=crop"
+                    data-lightbox-alt="Herramientas de barbero sobre la mesada de trabajo"
+                    aria-label="Ampliar imagen: herramientas de barbero">
+              <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?q=80&w=800&auto=format&fit=crop"
+                   alt="Herramientas de barbero sobre la mesada de trabajo" loading="lazy" width="800" height="600">
+            </button>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. TESTIMONIOS — inspirados en reseñas de Google
+         ============================================================ -->
+    <section class="section section--alt" id="testimonios">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Opiniones</p>
+          <h2 class="section__title">LO QUE DICEN NUESTROS CLIENTES</h2>
+          <p class="section__lead">
+            Testimonios inspirados en las reseñas reales de Google (★ 4.7 · 28 reseñas).
+          </p>
+        </header>
+
+        <div class="testimonials">
+
+          <figure class="testimonial reveal">
+            <div class="testimonial__stars" aria-hidden="true">★★★★★</div>
+            <blockquote class="testimonial__text">
+              <p>“El fade quedó exactamente como lo pedí. Muy prolijo con las líneas y la atención de primera.”</p>
+            </blockquote>
+            <figcaption class="testimonial__name">— Martín G.</figcaption>
+          </figure>
+
+          <figure class="testimonial reveal">
+            <div class="testimonial__stars" aria-hidden="true">★★★★★</div>
+            <blockquote class="testimonial__text">
+              <p>“Me afeité con navaja por primera vez. Toalla caliente y un acabado impecable. Volví a la semana.”</p>
+            </blockquote>
+            <figcaption class="testimonial__name">— Luciano P.</figcaption>
+          </figure>
+
+          <figure class="testimonial reveal">
+            <div class="testimonial__stars" aria-hidden="true">★★★★★</div>
+            <blockquote class="testimonial__text">
+              <p>“Reservé por WhatsApp y me atendieron en el horario exacto. La barbería impecable y muy buena música.”</p>
+            </blockquote>
+            <figcaption class="testimonial__name">— Franco R.</figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. HORARIOS Y UBICACIÓN
+         ============================================================ -->
+    <section class="section" id="horarios">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Cuándo y dónde</p>
+          <h2 class="section__title">HORARIOS Y UBICACIÓN</h2>
+        </header>
+
+        <div class="location">
+
+          <!-- Tabla de horarios -->
+          <div class="location__hours reveal">
+            <h3 class="location__subtitle">Horarios</h3>
+            <table class="hours">
+              <caption class="sr-only">Horarios de atención de The Blue Barbershop</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Día</th>
+                  <th scope="col">Horario</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="hours__row hours__row--closed">
+                  <th scope="row">Lunes</th>
+                  <td>CERRADO</td>
+                </tr>
+                <tr class="hours__row">
+                  <th scope="row">Martes a Viernes</th>
+                  <td>10:00 – 13:00 · 17:00 – 21:00</td>
+                </tr>
+                <tr class="hours__row">
+                  <th scope="row">Sábado</th>
+                  <td>10:00 – 13:00 · 17:00 – 21:00</td>
+                </tr>
+                <tr class="hours__row hours__row--closed">
+                  <th scope="row">Domingo</th>
+                  <td>CERRADO</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="hours__note">Los horarios pueden variar en fechas especiales. Consultanos por WhatsApp.</p>
+          </div>
+
+          <!-- Tarjeta de contacto / dirección -->
+          <div class="location__card reveal" id="contacto">
+            <h3 class="location__subtitle">Dónde estamos</h3>
+            <address class="address">
+              <p class="address__line"><strong>The Blue Barbershop</strong></p>
+              <p class="address__line">Azul 1320, Las Tortugas</p>
+              <p class="address__line">Godoy Cruz, Mendoza</p>
+              <p class="address__line">
+                <a class="link" href="tel:+5492615072338">+54 9 261 507-2338</a>
+              </p>
+            </address>
+
+            <div class="location__actions">
+              <a class="btn btn--ghost"
+                 href="https://www.google.com/maps/search/?api=1&query=The+Blue+Barbershop+Azul+1320+Godoy+Cruz+Mendoza"
+                 target="_blank" rel="noopener noreferrer">
+                Ver en Google Maps
+              </a>
+              <a class="btn btn--primary btn--block"
+                 href="https://wa.me/5492615072338" target="_blank" rel="noopener noreferrer">
+                Reservar por WhatsApp
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Mapa embebido de Google Maps -->
+        <div class="map reveal">
+          <iframe
+            src="https://www.google.com/maps?q=-32.945873,-68.820382&hl=es&z=16&output=embed"
+            title="Mapa de The Blue Barbershop en Azul 1320, Godoy Cruz, Mendoza"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         8. INSTAGRAM
+         ============================================================ -->
+    <section class="section section--alt" id="instagram">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Redes</p>
+          <h2 class="section__title">SEGUINOS EN @theblue_bs</h2>
+          <p class="section__lead">
+            Cortes nuevos, fades de la semana y antes / después. Todo en nuestro Instagram.
+          </p>
+        </header>
+
+        <div class="ig-grid">
+          <a class="ig-grid__item reveal" href="https://instagram.com/theblue_bs" target="_blank" rel="noopener noreferrer"
+             aria-label="Ver en Instagram: fade recién terminado">
+            <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=600&auto=format&fit=crop"
+                 alt="Fade recién terminado publicado en Instagram" loading="lazy" width="600" height="600">
+          </a>
+          <a class="ig-grid__item reveal" href="https://instagram.com/theblue_bs" target="_blank" rel="noopener noreferrer"
+             aria-label="Ver en Instagram: diseño de barba">
+            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=600&auto=format&fit=crop"
+                 alt="Diseño de barba publicado en Instagram" loading="lazy" width="600" height="600">
+          </a>
+          <a class="ig-grid__item reveal" href="https://instagram.com/theblue_bs" target="_blank" rel="noopener noreferrer"
+             aria-label="Ver en Instagram: afeitado con navaja">
+            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=600&auto=format&fit=crop"
+                 alt="Afeitado con navaja publicado en Instagram" loading="lazy" width="600" height="600">
+          </a>
+          <a class="ig-grid__item reveal" href="https://instagram.com/theblue_bs" target="_blank" rel="noopener noreferrer"
+             aria-label="Ver en Instagram: ambiente de la barbería">
+            <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?q=80&w=600&auto=format&fit=crop"
+                 alt="Ambiente de la barbería publicado en Instagram" loading="lazy" width="600" height="600">
+          </a>
+        </div>
+
+        <div class="section__cta reveal">
+          <a class="btn btn--outline" href="https://instagram.com/theblue_bs" target="_blank" rel="noopener noreferrer">
+            Seguir @theblue_bs en Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       9. FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+
+      <div class="footer__brand">
+        <p class="footer__logo">THE BLUE <span class="text-cyan">BARBERSHOP</span></p>
+        <p class="footer__tag">Barbería de autor en Godoy Cruz, Mendoza.</p>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__heading">Contacto</h3>
+        <ul class="footer__list">
+          <li>
+            <a class="footer__link" href="https://wa.me/5492615072338" target="_blank" rel="noopener noreferrer">
+              WhatsApp: +54 9 261 507-2338
+            </a>
+          </li>
+          <li>
+            <a class="footer__link" href="https://instagram.com/theblue_bs" target="_blank" rel="noopener noreferrer">
+              Instagram: @theblue_bs
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__heading">Dirección</h3>
+        <ul class="footer__list">
+          <li>
+            <a class="footer__link"
+               href="https://www.google.com/maps/search/?api=1&query=The+Blue+Barbershop+Azul+1320+Godoy+Cruz+Mendoza"
+               target="_blank" rel="noopener noreferrer">
+              Azul 1320, Las Tortugas, Godoy Cruz, Mendoza
+            </a>
+          </li>
+          <li><span class="footer__muted">Mar a Sáb · 10:00–13:00 y 17:00–21:00</span></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2025 The Blue Barbershop · Demo de sitio web creada por Tomás Martino · TomasMartinoDev</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       BOTÓN FLOTANTE DE WHATSAPP (fijo abajo a la derecha)
+       ============================================================ -->
+  <a class="wa-float"
+     href="https://wa.me/5492615072338"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Escribir por WhatsApp a The Blue Barbershop">
+    <svg viewBox="0 0 32 32" aria-hidden="true" fill="currentColor">
+      <path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.1 1.6 5.9L4 29l8.3-1.5c1.7.9 3.6 1.4 5.7 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-4.9.9.9-4.8-.2-.4c-1-1.6-1.5-3.4-1.5-5.3 0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8-4.4 9.9-8.5 9.9zm5.4-7.3c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3z"/>
+    </svg>
+  </a>
+
+  <!-- ============================================================
+       LIGHTBOX (imágenes de la galería)
+       Controlado por script.js — Esc cierra, ← y → navegan.
+       ============================================================ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imágenes de la galería" hidden>
+    <button class="lightbox__close" id="lightbox-close" type="button" aria-label="Cerrar visor de imágenes">✕</button>
+    <button class="lightbox__prev" id="lightbox-prev" type="button" aria-label="Imagen anterior">‹</button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" id="lightbox-img" src="" alt="">
+      <figcaption class="lightbox__caption" id="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox__next" id="lightbox-next" type="button" aria-label="Imagen siguiente">›</button>
+  </div>
+
+  <!-- JavaScript del sitio: menú, header sticky, animaciones y lightbox -->
+  <script src="script.js" defer></script>
+</body>
+</html>
