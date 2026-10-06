@@ -595,9 +595,10 @@ ul {
   font-size: 0.93rem;
 }
 
-/* ---------- 9. Galería masonry ---------- */
-/* Grilla uniforme: todas las tarjetas miden lo mismo y las imágenes
-   se recortan con object-fit, así ninguna queda mas alta que otra. */
+/* ---------- 9. Galería ---------- */
+/* Grilla regular: todas las tarjetas miden exactamente lo mismo.
+   La altura la define el contenedor y la imagen se recorta con
+   object-fit: cover, así NADIE se deforma ni queda desalineada. */
 .masonry {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -610,15 +611,17 @@ ul {
 }
 
 .masonry__btn {
+  position: relative;
   display: block;
   width: 100%;
+  /* Alto fijo de la tarjeta:Define la retícula y la alinea */
+  aspect-ratio: 4 / 3;
   padding: 0;
   border: 0;
   background: none;
   cursor: zoom-in;
   border-radius: var(--radius);
   overflow: hidden;
-  position: relative;
 }
 
 .masonry__btn::after {
@@ -644,8 +647,8 @@ ul {
 .masonry__btn img {
   display: block;
   width: 100%;
-  /* Ratio fijo 4:5 en todas: define la altura de la tarjeta */
-  aspect-ratio: 4 / 5;
+  /* Ocupa toda la tarjeta y se recorta sin deformarse */
+  height: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: var(--radius);
